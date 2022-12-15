@@ -1,17 +1,34 @@
 {
-  "name": "github-branch",
-  "version": "1.0.0",
+  "name": "git-away",
+  "version": "0.0.3",
   "type": "module",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "bin": "lib/index.js",
   "scripts": {
+    "watch": "tsc -w",
+    "start": "node lib/index.js",
+    "prepublish-npm": "tsc",
+    "publish-npm": "npm publish --access public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "git",
+    "clean",
+    "merged branches",
+    "remove"
+  ],
+  "author": "Boris Mutafov",
   "license": "ISC",
   "devDependencies": {
+    "@types/inquirer": "^9.0.3",
     "@types/node": "^18.11.15",
     "typescript": "^5.0.0-dev.20221215"
+  },
+  "dependencies": {
+    "colorette": "^2.0.19",
+    "git-away": "^0.0.1",
+    "inquirer": "^9.1.4"
   }
 }

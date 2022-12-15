@@ -1,9 +1,12 @@
 {
   "compilerOptions": {
-    "module": "ES2022",
-    "target": "ES2022",
+    "moduleResolution": "node",
+    "module": "ES6",
+    "declaration": true,
+    "target": "ES6",
     "sourceMap": true,
-    "outDir": "dist"
+    "outDir": "lib",
+    "baseUrl": "src/"
   },
   "include": ["src/**/*"]
 }

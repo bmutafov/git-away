@@ -1,5 +1,7 @@
 # Git Away
 
+![git-away](https://user-images.githubusercontent.com/14894196/221314306-22c3db21-c1cd-4afe-83d6-ed154f0f75ae.gif)
+
 A script that allows you to clean your merged (and non-merged) branches in a repository interactively.
 
 ## Running
